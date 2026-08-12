@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Rest N Play — Welcome Guide</title>
+  <meta name="description" content="Your digital welcome guide for Rest N Play" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- ==================== COVER PAGE ==================== -->
+    <section id="cover" class="page active">
+      <div class="cover-image">
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+          <p class="cover-eyebrow">Welcome Guide</p>
+          <h1 class="cover-title">Rest N Play</h1>
+          <p class="cover-subtitle">Home Sweet Home</p>
+          <div class="cover-divider"></div>
+          <p class="cover-location">
+            <i data-lucide="map-pin" class="icon-sm"></i>
+            <!-- EDIT YOUR ADDRESS HERE -->
+            Your Address Here, City
+          </p>
+          <button class="btn-primary" onclick="showPage('menu')">
+            Enter Guide
+            <i data-lucide="arrow-right" class="icon-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MAIN MENU ==================== -->
+    <section id="menu" class="page">
+      <header class="menu-header">
+        <div>
+          <p class="menu-eyebrow">Rest N Play</p>
+          <h2 class="menu-title">Welcome Guide</h2>
+          <p class="menu-subtitle">Stay, Explore & Enjoy</p>
+        </div>
+      </header>
+
+      <div class="icon-grid">
+        <!-- Row 1 -->
+        <button class="icon-card" onclick="showPage('welcome')">
+          <div class="icon-circle"><i data-lucide="home"></i></div>
+          <span>Welcome</span>
+        </button>
+        <button class="icon-card" onclick="showPage('checkin')">
+          <div class="icon-circle"><i data-lucide="key-round"></i></div>
+          <span>Check In</span>
+        </button>
+        <button class="icon-card" onclick="showPage('location')">
+          <div class="icon-circle"><i data-lucide="map-pin"></i></div>
+          <span>Location</span>
+        </button>
+
+        <!-- Row 2 -->
+        <button class="icon-card" onclick="showPage('wifi')">
+          <div class="icon-circle"><i data-lucide="wifi"></i></div>
+          <span>WiFi</span>
+        </button>
+        <button class="icon-card" onclick="showPage('rules')">
+          <div class="icon-circle"><i data-lucide="shield-check"></i></div>
+          <span>Rules</span>
+        </button>
+        <button class="icon-card" onclick="showPage('transport')">
+          <div class="icon-circle"><i data-lucide="train-front"></i></div>
+          <span>Transport</span>
+        </button>
+
+        <!-- Row 3 -->
+        <button class="icon-card" onclick="showPage('amenities')">
+          <div class="icon-circle"><i data-lucide="sofa"></i></div>
+          <span>Amenities</span>
+        </button>
+        <button class="icon-card" onclick="showPage('activities')">
+          <div class="icon-circle"><i data-lucide="camera"></i></div>
+          <span>Activities</span>
+        </button>
+        <button class="icon-card" onclick="showPage('info')">
+          <div class="icon-circle"><i data-lucide="info"></i></div>
+          <span>Infos</span>
+        </button>
+
+        <!-- Row 4 -->
+        <button class="icon-card" onclick="showPage('bars')">
+          <div class="icon-circle"><i data-lucide="wine"></i></div>
+          <span>Bars & Clubs</span>
+        </button>
+        <button class="icon-card" onclick="showPage('restaurants')">
+          <div class="icon-circle"><i data-lucide="utensils"></i></div>
+          <span>Restaurants</span>
+        </button>
+        <button class="icon-card" onclick="showPage('shopping')">
+          <div class="icon-circle"><i data-lucide="shopping-bag"></i></div>
+          <span>Shopping</span>
+        </button>
+
+        <!-- Row 5 -->
+        <button class="icon-card" onclick="showPage('emergency')">
+          <div class="icon-circle"><i data-lucide="siren"></i></div>
+          <span>Emergency</span>
+        </button>
+        <button class="icon-card" onclick="showPage('checkout')">
+          <div class="icon-circle"><i data-lucide="luggage"></i></div>
+          <span>Check Out</span>
+        </button>
+        <button class="icon-card" onclick="showPage('contact')">
+          <div class="icon-circle"><i data-lucide="phone"></i></div>
+          <span>Contact</span>
+        </button>
+      </div>
+
+      <footer class="menu-footer">
+        <p>Made with care for our guests</p>
+      </footer>
+    </section>
+
+    <!-- ==================== CONTENT PAGES ==================== -->
+
+    <!-- WELCOME -->
+    <section id="welcome" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Welcome</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>Hello & Welcome</h3>
+          <p>We’re so happy to have you at <strong>Rest N Play</strong>.</p>
+          <p>This little digital guide contains everything you need for a smooth, comfortable, and memorable stay. Take a moment to explore the sections — from WiFi and house rules to local recommendations.</p>
+          <p>We hope you feel right at home. If you need anything at all, just reach out.</p>
+          <p class="signature">— The Rest N Play Team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECK IN -->
+    <section id="checkin" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Check In</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>How to Check In</h3>
+          <ol class="styled-list">
+            <li>
+              <strong>Arrival time</strong><br />
+              Check-in is from <strong>3:00 PM</strong>. Early arrival may be possible — message us.
+            </li>
+            <li>
+              <strong>Access</strong><br />
+              <!-- EDIT THIS -->
+              The key is in a lockbox. Code: <strong>1234</strong> (please change this)
+            </li>
+            <li>
+              <strong>Door</strong><br />
+              Front door → turn key clockwise. Please lock it every time you leave.
+            </li>
+            <li>
+              <strong>Parking</strong><br />
+              <!-- EDIT THIS -->
+              Free street parking is available. Or use the designated spot if provided.
+            </li>
+          </ol>
+          <div class="note">
+            <i data-lucide="lightbulb" class="icon-sm"></i>
+            <span>Take a quick video or photo of the lockbox when you arrive if you need help later.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Location</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>Finding Us</h3>
+          <p class="address">
+            <!-- EDIT YOUR FULL ADDRESS -->
+            123 Example Street<br />
+            Your City, State ZIP
+          </p>
+          <a href="https://maps.google.com" target="_blank" class="btn-secondary">
+            <i data-lucide="map" class="icon-sm"></i>
+            Open in Google Maps
+          </a>
+          <div class="divider"></div>
+          <h4>Nearby Landmarks</h4>
+          <ul class="simple-list">
+            <li>5 min walk to the main square</li>
+            <li>10 min walk to the beach / park</li>
+            <li>Closest supermarket: 4 minutes on foot</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIFI -->
+    <section id="wifi" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>WiFi</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card wifi-card">
+          <div class="wifi-icon"><i data-lucide="wifi"></i></div>
+          <h3>Network Details</h3>
+          <div class="wifi-row">
+            <span class="label">Network Name</span>
+            <span class="value" id="wifi-name">RestNPlay_Guest</span>
+            <button class="copy-btn" onclick="copyText('wifi-name')">Copy</button>
+          </div>
+          <div class="wifi-row">
+            <span class="label">Password</span>
+            <span class="value" id="wifi-pass">Welcome2024!</span>
+            <button class="copy-btn" onclick="copyText('wifi-pass')">Copy</button>
+          </div>
+          <p class="hint">Tap “Copy” then paste in your phone’s WiFi settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>House Rules</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <ul class="rules-list">
+            <li>
+              <i data-lucide="volume-x" class="rule-icon"></i>
+              <div>
+                <strong>Quiet hours</strong>
+                <p>10:00 PM – 8:00 AM. Please keep noise low for neighbors.</p>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="cigarette-off" class="rule-icon"></i>
+              <div>
+                <strong>No smoking</strong>
+                <p>Smoking is not allowed inside. Outdoor smoking area is available.</p>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="paw-print" class="rule-icon"></i>
+              <div>
+                <strong>Pets</strong>
+                <p><!-- EDIT --> No pets unless previously approved.</p>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="users" class="rule-icon"></i>
+              <div>
+                <strong>Guests & Parties</strong>
+                <p>No parties or events. Additional overnight guests need prior approval.</p>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="trash-2" class="rule-icon"></i>
+              <div>
+                <strong>Trash</strong>
+                <p>Please sort recycling and take trash out before checkout.</p>
+              </div>
+            </li>
+            <li>
+              <i data-lucide="shoe" class="rule-icon"></i>
+              <div>
+                <strong>Shoes</strong>
+                <p>We kindly ask that you remove shoes inside the home.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPORT -->
+    <section id="transport" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Transport</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>Getting Around</h3>
+          <div class="info-block">
+            <h4><i data-lucide="train-front" class="icon-sm"></i> Public Transit</h4>
+            <p>Nearest bus/metro stop is a 6-minute walk. Day tickets are available at the station.</p>
+          </div>
+          <div class="info-block">
+            <h4><i data-lucide="car" class="icon-sm"></i> Taxis & Rideshare</h4>
+            <p>Uber, Bolt, and local taxis work well here. Airport transfer can be arranged on request.</p>
+          </div>
+          <div class="info-block">
+            <h4><i data-lucide="bike" class="icon-sm"></i> Bikes & Scooters</h4>
+            <p>Several rental shops and e-scooter stations are nearby.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section id="amenities" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Amenities</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <div class="amenities-grid">
+            <div class="amenity"><i data-lucide="wifi"></i><span>Fast WiFi</span></div>
+            <div class="amenity"><i data-lucide="wind"></i><span>Air Conditioning</span></div>
+            <div class="amenity"><i data-lucide="flame"></i><span>Heating</span></div>
+            <div class="amenity"><i data-lucide="washing-machine"></i><span>Washer</span></div>
+            <div class="amenity"><i data-lucide="tv"></i><span>Smart TV</span></div>
+            <div class="amenity"><i data-lucide="coffee"></i><span>Coffee Machine</span></div>
+            <div class="amenity"><i data-lucide="utensils"></i><span>Full Kitchen</span></div>
+            <div class="amenity"><i data-lucide="droplets"></i><span>Hot Water</span></div>
+            <div class="amenity"><i data-lucide="shirt"></i><span>Iron & Board</span></div>
+            <div class="amenity"><i data-lucide="hairdryer"></i><span>Hair Dryer</span></div>
+            <div class="amenity"><i data-lucide="bath"></i><span>Essentials</span></div>
+            <div class="amenity"><i data-lucide="baby"></i><span>Crib (on request)</span></div>
+          </div>
+          <div class="divider"></div>
+          <p class="hint">Towels, toiletries, and basic kitchen supplies are provided. Let us know if anything is missing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Activities</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>Things to Do</h3>
+          <ul class="simple-list">
+            <li>Morning walk or run in the nearby park</li>
+            <li>Visit the local market (best on weekends)</li>
+            <li>Sunset viewpoint — 15 min walk</li>
+            <li>Bike rental for a coastal or countryside ride</li>
+            <li>Day trip suggestions available on request</li>
+          </ul>
+          <p class="hint">Ask us for personalized recommendations based on your interests!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Useful Info</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <div class="info-block">
+            <h4>Trash & Recycling</h4>
+            <p>Bins are located [edit location]. Collection days: [edit days].</p>
+          </div>
+          <div class="info-block">
+            <h4>Heating / AC</h4>
+            <p>Thermostat is in the living room. Please turn off when you leave for the day.</p>
+          </div>
+          <div class="info-block">
+            <h4>Water & Electricity</h4>
+            <p>Everything works as normal. Main switches are in the utility closet if needed.</p>
+          </div>
+          <div class="info-block">
+            <h4>Supermarket</h4>
+            <p>Closest one is a 4-minute walk. Open daily 8 AM – 9 PM.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARS -->
+    <section id="bars" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Bars & Clubs</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <div class="place-card">
+            <h4>Local Favorite Bar</h4>
+            <p>Cozy atmosphere, great cocktails. 8 min walk.</p>
+          </div>
+          <div class="place-card">
+            <h4>Wine Bar</h4>
+            <p>Excellent selection of local wines. Perfect for a quiet evening.</p>
+          </div>
+          <div class="place-card">
+            <h4>Rooftop / Club</h4>
+            <p>For a livelier night out. Taxi recommended (≈12 min).</p>
+          </div>
+          <p class="hint">We can also recommend quieter spots if you prefer a relaxed night.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESTAURANTS -->
+    <section id="restaurants" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Restaurants</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <div class="place-card">
+            <h4>Our Top Recommendation</h4>
+            <p>Seasonal menu, warm service. Book ahead on weekends.</p>
+          </div>
+          <div class="place-card">
+            <h4>Casual & Local</h4>
+            <p>Great for lunch or a quick dinner. Authentic and affordable.</p>
+          </div>
+          <div class="place-card">
+            <h4>Special Occasion</h4>
+            <p>Beautiful setting for a nicer meal. 10–12 min walk or short taxi.</p>
+          </div>
+          <p class="hint">Tell us your preferred cuisine and budget — we’ll give you personal tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOPPING -->
+    <section id="shopping" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Shopping</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <ul class="simple-list">
+            <li><strong>Supermarket</strong> — 4 min walk (daily essentials)</li>
+            <li><strong>Bakery</strong> — Fresh bread & pastries, 3 min walk</li>
+            <li><strong>Pharmacy</strong> — 6 min walk</li>
+            <li><strong>Local market</strong> — Weekends, great for produce & souvenirs</li>
+            <li><strong>Shopping street</strong> — 12 min walk or short bus ride</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMERGENCY -->
+    <section id="emergency" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Emergency</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <div class="emergency-grid">
+            <div class="emergency-item">
+              <span class="em-label">Emergency (EU)</span>
+              <a href="tel:112" class="em-number">112</a>
+            </div>
+            <div class="emergency-item">
+              <span class="em-label">Police</span>
+              <a href="tel:112" class="em-number">112</a>
+            </div>
+            <div class="emergency-item">
+              <span class="em-label">Ambulance</span>
+              <a href="tel:112" class="em-number">112</a>
+            </div>
+            <div class="emergency-item">
+              <span class="em-label">Fire</span>
+              <a href="tel:112" class="em-number">112</a>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <h4>Nearest Hospital / Clinic</h4>
+          <p><!-- EDIT --> Name of hospital — approx. 10–15 min by car/taxi.</p>
+          <div class="divider"></div>
+          <h4>Host Contact (Urgent)</h4>
+          <p>Message us anytime on Airbnb or call/text the number in the Contact section.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECK OUT -->
+    <section id="checkout" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Check Out</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>Before You Leave</h3>
+          <ol class="styled-list">
+            <li>Check-out time is <strong>11:00 AM</strong></li>
+            <li>Please strip the beds and leave used towels in the bathroom</li>
+            <li>Load and start the dishwasher (or wash used dishes)</li>
+            <li>Take out the trash</li>
+            <li>Turn off lights, AC/heating, and close all windows</li>
+            <li>Lock the door and return the key to the lockbox</li>
+          </ol>
+          <div class="note">
+            <i data-lucide="heart" class="icon-sm"></i>
+            <span>Thank you for treating the home with care. Safe travels!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page content-page">
+      <div class="content-header">
+        <button class="back-btn" onclick="showPage('menu')"><i data-lucide="arrow-left"></i></button>
+        <h2>Contact</h2>
+      </div>
+      <div class="content-body">
+        <div class="content-card">
+          <h3>We’re Here to Help</h3>
+          <p>The best way to reach us is through the Airbnb messaging system. We usually reply very quickly.</p>
+          <div class="contact-block">
+            <div class="contact-row">
+              <i data-lucide="phone" class="icon-sm"></i>
+              <div>
+                <span class="label">Phone / WhatsApp</span>
+                <a href="tel:+1234567890" class="value">+1 234 567 890</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <i data-lucide="mail" class="icon-sm"></i>
+              <div>
+                <span class="label">Email</span>
+                <a href="mailto:hello@restnplay.com" class="value">hello@restnplay.com</a>
+              </div>
+            </div>
+          </div>
+          <p class="hint">For non-urgent questions, messaging on Airbnb is perfect. For true emergencies, call the numbers in the Emergency section first.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
