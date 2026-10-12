@@ -1564,7 +1564,66 @@ img {
         padding: 23px 17px;
     }
 }
+/* HONESTY STORE PAYMENT IMAGES */
+.honesty-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
 
+.honesty-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.honesty-content > span {
+    display: block;
+    line-height: 1.5;
+}
+.honesty-images {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.honesty-images img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+    border-radius: 8px;
+}
+.store-list {
+    margin-top: 12px;
+}
+
+.store-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    gap: 20px;
+}
+
+.store-item:last-child {
+    border-bottom: none;
+}
+
+.store-item span {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.store-item strong {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #203d28;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
 /* Generator image - show the complete image */
 #generator .activity-image {
     width: 100%;
